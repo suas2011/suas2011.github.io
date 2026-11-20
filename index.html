@@ -380,6 +380,82 @@
       margin-top: 6px;
     }
 
+    /* INTERNATIONAL EDUCATION POSTER */
+
+    .international-section {
+      background: linear-gradient(145deg, #073f43, #086c68, #123e50);
+      border: 1px solid #b9c8ce;
+      border-radius: 18px;
+      padding: clamp(20px, 4vw, 38px);
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(12, 54, 65, 0.15);
+    }
+
+    .international-section h2 {
+      color: #ffffff;
+      font-size: clamp(22px, 3vw, 29px);
+      margin: 0 0 8px;
+    }
+
+    .international-section .section-description {
+      color: #d5e1e5;
+      font-size: 14px;
+      margin: 0 auto 25px;
+      max-width: 700px;
+    }
+
+    .poster-image-link {
+      display: block;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .international-poster {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 2px solid #c5d0d5;
+      border-radius: 10px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+      transition: transform .25s ease;
+    }
+
+    .international-poster:hover {
+      transform: scale(1.01);
+    }
+
+    .international-motto {
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin: 24px 0 5px;
+    }
+
+    .international-tagline {
+      color: #d2dce0;
+      font-size: 14px;
+      margin: 0 0 20px;
+    }
+
+    .poster-view-button {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 1px solid #d0dce1;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #dce4e8, #aebdc5);
+      color: #123e48;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      transition: background .2s, transform .2s;
+    }
+
+    .poster-view-button:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+
     /* SKILLS */
 
     .skills-grid {
@@ -882,6 +958,14 @@
       .book-image-link img {
         height: 230px;
       }
+
+      .international-section {
+        padding: 20px 14px;
+      }
+
+      .international-motto {
+        font-size: 21px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -952,6 +1036,10 @@
 
           <a class="active" href="#overview">
             <span class="nav-icon">⌂</span> Overview
+          </a>
+
+          <a href="#international-education">
+            <span class="nav-icon">🌐</span> International Education
           </a>
 
           <a href="#skills">
@@ -1119,6 +1207,58 @@
         <p style="font-size:11px;color:#68758a;margin-top:9px">
           *Professional figures supplied for this portfolio.
         </p>
+
+      </section>
+
+      <!-- INTERNATIONAL EDUCATION -->
+
+      <section id="international-education" class="section">
+
+        <div class="international-section">
+
+          <h2>The CS Academy</h2>
+
+          <p class="section-description">
+            International Computer Science & ICT Education
+            <br>
+            Cambridge | Pearson Edexcel | WJEC | Eduqas | AQA |
+            IB Diploma Programme
+          </p>
+
+          <a
+            class="poster-image-link"
+            href="assets/the-cs-academy-international-education.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View the full-size international education poster">
+
+            <img
+              class="international-poster"
+              src="assets/the-cs-academy-international-education.png"
+              alt="The CS Academy international education poster featuring examination boards and qualification codes"
+              loading="lazy">
+
+          </a>
+
+          <div class="international-motto">
+            Learn | Apply | Lead
+          </div>
+
+          <p class="international-tagline">
+            Your Partner in Education
+          </p>
+
+          <a
+            class="poster-view-button"
+            href="assets/the-cs-academy-international-education.png"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            View Full-Size Poster ↗
+
+          </a>
+
+        </div>
 
       </section>
 
